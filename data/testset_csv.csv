@@ -1,4 +1,4 @@
-,protein_path,ligand
+,protein_path,ligand_description
 0,data/PDBBind_processed/6qqw/6qqw_protein_processed.pdb,data/PDBBind_processed/6qqw/6qqw_ligand.mol2
 1,data/PDBBind_processed/6d08/6d08_protein_processed.pdb,data/PDBBind_processed/6d08/6d08_ligand.sdf
 2,data/PDBBind_processed/6jap/6jap_protein_processed.pdb,data/PDBBind_processed/6jap/6jap_ligand.sdf

@@ -1,0 +1,25 @@
+[project]
+name = "diffdock"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "e3nn>=0.5.5",
+    "fair-esm>=2.0.0",
+    "networkx>=3.2.1",
+    "pandas>=2.1.0",
+    "prody>=2.4.1",
+    "pybind11>=2.13.6",
+    "pytorch-lightning>=2.5.0.post0",
+    "rdkit>=2024.9.5",
+    "scikit-learn>=1.6.1",
+    "scipy>=1.13.1",
+    "torch>=2.6.0",
+    "torch-cluster>=1.6.3",
+    "torch-geometric>=2.6.1",
+    "torch-scatter>=2.1.2",
+    "torch-sparse>=0.6.18",
+    "torch-spline-conv>=1.2.2",
+    "torchmetrics>=1.6.1",
+]
