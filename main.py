@@ -1,6 +1,4 @@
-def main():
-    print("Hello from diffdock!")
+import torch
 
-
-if __name__ == "__main__":
-    main()
+if torch.backends.mps.is_available():
+    print("True")

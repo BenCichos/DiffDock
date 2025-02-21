@@ -54,10 +54,11 @@ if args.dataset == 'pdbbind':
 
     for name in tqdm(names):
         if name == '.DS_Store': continue
-        if os.path.exists(os.path.join(data_dir, name, f'{name}_protein_processed.pdb')):
-            rec_path = os.path.join(data_dir, name, f'{name}_protein_processed.pdb')
+        if name == 'dir': continue
+        if os.path.exists(os.path.join(data_dir, name, f'{name}_protein_processed_fix.pdb')):
+            rec_path = os.path.join(data_dir, name, f'{name}_protein_processed_fix.pdb')
         else:
-            rec_path = os.path.join(data_dir, name, f'{name}_protein.pdb')
+            rec_path = os.path.join(data_dir, name, f'{name}_protein_fix.pdb')
         l = get_structure_from_file(rec_path)
         for i, seq in enumerate(l):
             sequences.append(seq)
@@ -86,4 +87,3 @@ elif args.dataset == 'moad':
     # save to file
     with open(args.out_file, 'wb') as f:
         pickle.dump(name_to_sequence, f)
-

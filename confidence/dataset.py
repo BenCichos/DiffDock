@@ -271,6 +271,3 @@ class ConfidenceDataset(Dataset):
             pickle.dump((full_ligand_positions, rmsds), f)
         with open(os.path.join(self.full_cache_path, f"complex_names_in_same_order{'' if self.cache_creation_id is None else '_id' + str(self.cache_creation_id)}.pkl"), 'wb') as f:
             pickle.dump((names), f)
-
-
-
